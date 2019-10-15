@@ -1,0 +1,129 @@
+body{
+	background-color: #ffffff;
+	font-family: 'Roboto Mono';
+	padding: 70px;
+}
+
+
+
+img  {
+ width: 100%;
+
+
+}
+	
+
+
+
+
+
+/* Navigation style */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightblue;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to cyan  on hover */
+li a:hover {
+  background-color: cyan;
+}
+
+
+
+.hamburger div{
+width: 25px
+margin:5px;
+height: 3px;
+background-color:rgb(226, 226, 226);
+
+}
+
+.hamburger{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 500px){
+	.nav-links{
+		width:60%;
+	}
+}
+
+@media screen and (max-width: 300px){
+	.nav-links{
+		position: absolute;
+		left: 0px
+		height:92;
+		top:8vh;
+		background-color: lightblue;
+		display: flex;
+		flex-direction: row;
+	}
+
+.nav-links li {
+	opacity: 0;
+}
+
+.hamburger {
+	display: block;
+	height: 10px;
+}
+
+
+
+
+
+
+
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;	
+	grid-template-rows:1fr 1fr 1fr;
+	
+	
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}	
+	                     
+.grid-box > div{
+
+	background-color: #ddd;
+	display: grid;
+	grid-template-columns: 70% 30%;
+
+}
+
+
+
+
+.contact-section {
+	position: fixed;
+	bottom: 0;	
+}
+
+
+
+	
+
+	
