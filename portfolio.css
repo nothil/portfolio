@@ -101,6 +101,15 @@ nav {
 
 /*welcoming-section stylimg*/
 
+.welcome-text{
+	font-weight: 60px;
+
+}
+
+
+
+
+
 .image-box {
 	display:grid;
 	position: relative;
@@ -150,23 +159,23 @@ nav {
 
   /*End Of Welcomiming styling*/
 
-.box {
-	/* padding: 0; */
-	/* margin-top: 10px;*/
-}
+
+
 
 .box-contents {
 	display: grid;
 	grid-template-columns: 1fr 1fr ;
 	grid-template-rows: 1fr;
 	grid-gap:0.2px;
+	
+	
 }
-
+/*About Me section*/
 .box2-contents {
 display:grid;
 grid-template-columns:1fr;
 grid-template-rows:1fr;
-background-color: #fff;
+background-color: white;
 grid-gap:0.2px ;
 
 }
@@ -174,9 +183,16 @@ grid-gap:0.2px ;
 .box2-contents .box-item {
 	text-align: left;
 	padding:20px 15px;
+	 
+
 }
 
+.about-me{
+	font-size: 30px;
+	text-align: center;
+	font-weight: 60px;
 
+}
 
 
 .box-contents .box-item {
@@ -189,10 +205,43 @@ grid-gap:0.2px ;
 	}
 }
 	
-	                     
+	
+.skills {
+	text-align: center;
+	font-weight:60px;
+	
+
+}
 
 
+.projects{
+	text-align: 
+}
 
+
+.box3-contents{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-rows: 1fr ;
+	background-color: mediumaquamarine;
+	grid-gap:10px;
+	
+}
+
+
+.box3-contents .box-item {
+	
+	padding-top: 10px
+}
+
+@media screen and (min-width: 50em) {
+	.box3-contents {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+
+/*Footer-Section*/
 .wrapper ul{
 list-style: none;
 
@@ -204,6 +253,7 @@ list-style: none;
 	border-radius: 50%;
 	
 	border: 5px solid #fff;
+	background-color: #d3d3d3;
 
 }
 
@@ -213,34 +263,7 @@ li {
 float:left;
 }
 
-/* 
-
-.contact-section {
-	position: fixed;
-	bottom: 0;	
-	background-color: black;
-	text-align: center
-	color: #fff;
-}
-
-.full-width {
-	max-width: 100% !important	;
-}
 
 
-
-	
-
-	 */
-  {
-	 background-color: black;
-	 width: 100%
-	 padding: 60px 0px;
- color:white;
-	 height:200px;
-	 bottom :0;
-	 position:fixed;
-
- }
-
+  
  
