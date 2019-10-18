@@ -214,9 +214,6 @@ grid-gap:0.2px ;
 }
 
 
-.projects{
-	text-align: 
-}
 
 
 .box3-contents{
@@ -244,6 +241,7 @@ grid-gap:0.2px ;
 /*Footer-Section*/
 .wrapper ul{
 list-style: none;
+height: 60px;
 
 }
 
@@ -251,17 +249,24 @@ list-style: none;
 	text-align: center;
 	cursor: pointer;
 	border-radius: 50%;
-	
-	border: 5px solid #fff;
+
 	background-color: #d3d3d3;
+	
+	display: inline-block;
+	
 
 }
 
 
-li {
 
-float:left;
+
+.contact-head {
+	background-color: skyblue;
+	height: 30%;
+	padding: 20px 20px;
+
 }
+
 
 
 
