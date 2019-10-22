@@ -118,9 +118,8 @@ hr {
 	width: 30%;
 }
 
- h {
+h {
 	text-align: left;
-
 }
 
 .image-box {
@@ -158,9 +157,7 @@ hr {
 
   
 
-  .image-box__content {
-	position: relative;
-  
+  .image-box__content {  
 	z-index: 3;
 	
 	color: white;
@@ -188,9 +185,6 @@ hr {
 }
 
 @media screen and (min-width: 50em) {
-	.box-contents {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
 }
 	
 	
@@ -202,9 +196,6 @@ hr {
 }
 
 @media screen and (min-width: 50em) {
-	.box3-contents {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
 }
 
 
@@ -218,26 +209,17 @@ height: 60px;
 
  /*Begining of card styling*/
 .container-card{
-	position: absolute;
-	top: 8rem;
-	left: 5rem;
-	z-index: 999;
+	margin: 1em;
+	padding:
 }
 
 .container-card .card {
-	position: relative;
-	width: 80%;
 	background-color: rgba(250,0,0,.35);
 	color: #fff;
-	padding: 1.5rem;
 	text-align: center;
 }
 
 .container-card .card h3 {
-	position: absolute;
-	top: 1.5rem;
-	left: 50%;
-	transform: translateX(-50%);
 }
 
 .container-card .card p {
@@ -250,9 +232,45 @@ height: 60px;
 
 @media screen and (min-width: 50em) {
 	.container-card .card {
-		width: 45%;
 	}
 }
+/*second card*/
+
+.container-card2{
+	margin: 1em;
+}
+
+.container-card2 .card2 {
+	background-color: rgba(250,0,0,.35);
+	color: #fff;
+	text-align: center;
+}
+
+.container-card2 .card2 h3 {
+}
+
+.container-card2.card2 p {
+	/* text-align: justify;  */
+}
+
+ .container-card2 .card2 .face{
+	transition: 0.5s;	
+}
+
+.about-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 50em) {
+}
+
+
+
+
+
+
+
 
 /*begining of the footer*/
 footer{
@@ -368,3 +386,23 @@ input[type=submit] {
 	
 		}
 	}
+
+
+
+	.grid-container{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+
+	}
+
+	.grid-container .div{
+
+		padding: 20em;
+		text-align: left;
+		margin: 20px 20px;
+	}
+
+
+
+
