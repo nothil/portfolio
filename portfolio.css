@@ -118,10 +118,7 @@ font-weight: 60px;
 }
 
 
-hr {
 
-	width: 30%;
-}
 
 h {
 	text-align: left;
@@ -339,8 +336,6 @@ input[type=submit] {
 	
 	}
 	
-	
-	
 	.btn{
 		display:inline-block;
 		width: 50px;
@@ -354,8 +349,7 @@ input[type=submit] {
 		position:relative;
 	
 	}
-	
-	
+
 	.btn i{
 	
 		line-height: 50px;
@@ -419,7 +413,7 @@ input[type=submit] {
 
 	.container-card2 .face2{
 
-		/* margin-top: 50px; */
+		 margin-top: 50px; 
 	}
 
 	.grid-item{
@@ -435,10 +429,6 @@ input[type=submit] {
 
 
 	}
-
-
-
-
 	.grid-container-2{
 		display:grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -451,9 +441,6 @@ input[type=submit] {
 		
 
 	}
-
-	
-
 	.projects-section {
 		text-align: center;
 		padding: 1rem 2rem;
@@ -472,7 +459,7 @@ input[type=submit] {
 		}
 	  }
 	  
-	  /* "Automagic" image grid using no media queries */
+	  
 	  .projects-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
