@@ -6,12 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>portfolio-website</title>
-
-
   <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <script src="portfolio.js"></script> 
          <!--FontAwsome Icons-->
- 
-
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   
   <link rel="stylesheet"
@@ -21,13 +18,7 @@
  
   <!--GOOGLE FONT LINK ROBOTO-->
 
-
-
-
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-
-
-
   
 </head>
 
@@ -38,20 +29,16 @@
    <div class="logo">
           <li><a href="index.html">Nothile Ngcobo</a></li>
           </div>
-          <li><a href="aboutme.html">About Me</a></li>
           
-          <li><a href="myskills.html">Skills</a></li>
-          <li><a href="#c">Contact Me</a></li>
+          
+          <li><a href="myskills.html">My Skills</a></li>
+          
         </ul>
         
     </nav>
     
-
-
-
     <!--welcoming-section-->
     
-
   <div class="container">
     <div class="image-box">
       <div class="image-box__background" style="--image-url: url('images/project1.jpeg')"></div>
@@ -64,25 +51,39 @@
         <p1>I am Nothile Ngcobo</p1><br>
             
                   
-        <p2>I am a web developer</p2>
-        
-          
-  
-        
+        <p2>I am a web developer</p2>  <br>
+                       <hr>
+                   
+        <button type="button" class="collapsible">Read More</button>
+        <div class="content">
+          <p>Since i started my journey as a web developer,I've done online tutorials,which really helped me.I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time
+            I like to code things from scratch,and enjoy bringing ideas to life in the browser.
+              since i have started my journey as aweb developer,i've done most online tutorial, which really helped me develop skills i.e HTML CSS JS
+              i like to develope applications from strach, and i also enjoy bringing new ideas to life.
+          </p>          
+        </div> 
+   <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        } 
+        </script>
       
-        
-        
-        
-
-
-        
       </div>
       </div>
     </div>
   </div>
-
-
-                        <!--Contacts-->
+   <!--Contacts-->
 <footer>
 <div class="container-hireme">
 
@@ -97,13 +98,12 @@
                </div>          
               
           
-               
-                <div>
+
+              <div>
                  <input type="text" id="email" name="email" placeholder="Your Email..">
                 </div>
               
           
-        
                <div>
               <textarea id="subject" name="subject" placeholder="Leave me a short massage.." style="height:100px"></textarea>
                </div>
@@ -115,9 +115,7 @@
           
               
     </div>
-
-
-              <a class="btn" href="#">
+              <a class="btn" href="https://github.com/nothil?tab=repositories">
                   <i class="fab fa-github-square" ></i></a>
                      </a>
             
@@ -132,8 +130,6 @@
           </footer>
             
           </div>
-
-       
     </div>
 
 </body>
