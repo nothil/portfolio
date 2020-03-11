@@ -74,6 +74,7 @@ body {
 
 
 
+
 /* Change the link color to cyan  on hover */
 li a:hover {
   background-color: grey;
@@ -97,6 +98,7 @@ nav {
 .nav-links li a {
 	color: #fff;
 	padding: 10px 15px
+	
 }
 
 .logo{
@@ -136,6 +138,7 @@ h {
 	right: 0;
 	bottom: 0;
 	left: 0;
+	
   }
 
   .image-box__background {
@@ -145,7 +148,7 @@ h {
 	  position: center center;
 	 
 	  z-index: 1;
-
+	  
   }
 
   .image-box__overlay {
@@ -434,4 +437,8 @@ input[type=submit] {
 		text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30);
 		
 	  }
+	  .section-myskills{
+		  background-color: whitesmoke;
+	  }
+
 	  
