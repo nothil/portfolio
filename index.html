@@ -23,7 +23,7 @@
 </head>
 
 <body>
-<nav>
+ <nav >
 
 <ul class="nav-links">
 <div class="logo"> 
@@ -38,104 +38,110 @@
 
 </nav>
 
+
 <div class="header">
     <div class="slider">
-      <div class="container">
+      
+        <div class="image-box">
+          <div class="image-box__background" style="--image-url: url('images/project1.jpeg')"></div>
           <div class="image-box__overlay"></div>
+          <div class="image-box__content">
+      
+         
         <div class="intro">
           <h2> Welcome To My Portfolio</h2>
           <h2> I am a full-stack Web Developer </h2>
           <button class="btn btn-success" type="button" name="button" id="about"><span class="glyphicon glyphicon-chevron-down"></span></i> Learn More</button>
-          
+        </div>
         </div>
       </div>
-    </div>
+     
+</div>
     
     <!--welcoming-section-->
     
   
     
-      
-    
-    <section id="about" >
-        <div class="image-box">
-        
-         <h2>About me</h2> <br>
-
-
-  
-            
-            <div class="image-box__overlay"></div>
+    <section id="about">
+      <div class="image-box">
+         <div class="image-box__overlay">
+           <h2>About me</h2> <br>
+         
+            </div>
             <div class="image-box__content">
-
+                  
              
-        <div class="row section-banner">
-          <div class="col-md-offset-3 col-md-6 text-center">
-            <div>
+              <div class="row max" >
+    
+                <div class="col-sm-4 text-center">
+                  <div class="desc">
+                    <div class="icon-me"><i class="fa fa-user"></i></div>
+                    <p>Since i started my journey as a web developer,I've done online tutorials,which really helped me.I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time
+                      I like to code things from scratch,and enjoy bringing ideas to life in the browser.
+                        since i have started my journey as aweb developer,i've done most online tutorial, which really helped me develop skills i.e HTML CSS JS
+                        i like to develope applications from strach, and i also enjoy bringing new ideas to life.
+                    </p> 
+                  </div>
+                </div>
+          
+                <div class="col-sm-4 text-center">
+                  <div class="desc">
+                    <div class="icon-me"><i class="fa fa-mortar-board"></i></div>
+                    <img src="images/nothilengcobo.jpg" style="border-radius: 50%;  width: 200px;">
+                  </div>
+                </div>
+          
+                <div class="col-sm-4 text-center">
+                  <div class="desc">
+                    
+                      <div class="content-in">
+                      <ul class="list-group">
+                          <li class="list-group-item active">Languages</li>
+                          <li class="list-group-item">Html & Css</li>
+                          <li class="list-group-item">JavaScript</li>
+                          <li class="list-group-item">node js</li>
+                          <li class="list-group-item">databases SQL</li>
+                          <li class="list-group-item">Bootstrap & JQuery</li>
+                          <li class="list-group-item">Bootstrap & JQuery</li>
+                          <li class="list-group-item">Bootstrap & JQuery</li>
+                        </ul>
+                        
+          
+                      </div>
+                  </div>
+                   
+                    
+                  </div>
+                </div>
+          
+              </div>
+             </div>
+          
+            </section>
+      
+          
+          </div>
               <span class="line about"></span>
               <span class="section-title about"></span>
               <span class="line about"></span>
+
+            
             </div>
           </div>
         </div>
     
     
-        <div class="row max" >
-    
-          <div class="col-sm-4 text-center">
-            <div class="desc">
-              <div class="icon-me"><i class="fa fa-user"></i></div>
-              <p>Since i started my journey as a web developer,I've done online tutorials,which really helped me.I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time
-                I like to code things from scratch,and enjoy bringing ideas to life in the browser.
-                  since i have started my journey as aweb developer,i've done most online tutorial, which really helped me develop skills i.e HTML CSS JS
-                  i like to develope applications from strach, and i also enjoy bringing new ideas to life.
-              </p> 
-            </div>
-          </div>
-    
-          <div class="col-sm-4 text-center">
-            <div class="desc">
-              <div class="icon-me"><i class="fa fa-mortar-board"></i></div>
-              <img src="images/nothilengcobo.jpg">
-            </div>
-          </div>
-    
-          <div class="col-sm-4 text-center">
-            <div class="desc">
-              <div class="icon-me"><i class="fa fa-rocket"></i></div>
-              <p></p>
-            </div>
-          </div>
-    
-        </div>
-    
+      </div>
     
       </section>
 
-      <div class="skills" id="myskills">
-        <h2>I have work on some view projects </h2>
-
-        <div class="row">
-          <div class="col-md-4" style="background-color: whitesmoke">
-            <div class="content-in">
-            <ul class="list-group">
-                <li class="list-group-item active">Languages</li>
-                <li class="list-group-item">Html & Css</li>
-                <li class="list-group-item">JavaScript</li>
-                <li class="list-group-item">node js</li>
-                <li class="list-group-item">databases SQL</li>
-                <li class="list-group-item">Bootstrap & JQuery</li>
-              </ul>
-
-            </div>
-        </div>
-
+      
         
       </div>
 
    <!--Contacts-->
 <footer>
-<div class="container-hireme">
+ <div class="container-hireme">
 
   <div class="hireme">
   <h4> <strong>Contact Me</strong></h4> 
@@ -162,26 +168,28 @@
       <input type="submit" value="Submit">
 
     </div>
+
+    <a class="btn" href="https://github.com/nothil?tab=repositories">
+      <i class="fab fa-github-square"></i></a>
+          </a>
+
+      <a  class="btn" href="#">
+      <i class="fas fa-envelope-open-text" ></i> </a>
+      </a>
+
+    <a  class="btn" href="https://www.linkedin.com/in/nothile-ngcobo-291243199/">
+        <i class="fab fa-linkedin-in"></i> </a>
+    </a>
           
               
     </div>
-    <a class="btn" href="https://github.com/nothil?tab=repositories">
-        <i class="fab fa-github-square" ></i></a>
-            </a>
-  
-        <a  class="btn" href="#">
-        <i class="fas fa-envelope-open-text" ></i> </a>
-        </a>
-  
-      <a  class="btn" href="https://www.linkedin.com/in/nothile-ngcobo-291243199/">
-          <i class="fab fa-linkedin-in"></i> </a>
-      </a>
+    
       
 </footer>
-  <footer>
 
 
-</footer>
+
+
 </body>
 </html>
 
