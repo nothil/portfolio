@@ -1,139 +1,287 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>portfolio-website</title>
-  <link rel="stylesheet" type="text/css" href="portfolio.css">
-  <script src="portfolio.js"></script> 
-         <!--FontAwsome Icons-->
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-  crossorigin="anonymous" />
- 
-  <!--GOOGLE FONT LINK ROBOTO-->
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-  
-</head>
-
-<body>
-    <nav>
-
-        <ul class="nav-links">
-   <div class="logo">
-          <li><a href="index.html">Nothile Ngcobo</a></li>
-          </div>
-          
-          
-          <li><a href="myskills.html">My Skills</a></li>
-          
-        </ul>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" >
         
-    </nav>
-    
-    <!--welcoming-section-->
-    
-  <div class="container">
-    <div class="image-box">
-      <div class="image-box__background" style="--image-url: url('images/project1.jpeg')"></div>
-      <div class="image-box__overlay"></div>
-      <div class="image-box__content">
-        <div class="welcome-text">
-           <img src="images/nothilengcobo.jpg">
-        <h1>Welcome To My Portfolio</h1>
-                  <hr>
-        <p1>I am Nothile Ngcobo</p1><br>
-            
-                  
-        <p2>I am a web developer</p2>  <br>
-                       <hr>
-                   
-        <button type="button" class="collapsible">Read More</button>
-        <div class="content">
-          <p>Since i started my journey as a web developer,I've done online tutorials,which really helped me.I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time
-            I like to code things from scratch,and enjoy bringing ideas to life in the browser.
-              since i have started my journey as aweb developer,i've done most online tutorial, which really helped me develop skills i.e HTML CSS JS
-              i like to develope applications from strach, and i also enjoy bringing new ideas to life.
-          </p>          
-        </div> 
-   <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "block";
-            }
-          });
-        } 
-        </script>
-      
-      </div>
-      </div>
-    </div>
-  </div>
-   <!--Contacts-->
-<footer>
-<div class="container-hireme">
-
-               <div class="hireme">
-                <h4> <strong>Hire Me</strong></h4> 
-               </div>     
-               <hr style="color:black">
-               
-               </div>
-               <div>
-                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
-               </div>          
-              
-          
-
-              <div>
-                 <input type="text" id="email" name="email" placeholder="Your Email..">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>portfolio</title>
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/resources/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/resources/favicons/manifest.json">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/nothilengcobo.jpg"  class="logo" >
+                    <img src="resources/img/nothilengcobo.jpg" style="border-radius: 50%;"  class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">About</a></li>
+                        <li><a href="#cities">Portfolio</a></li>
+                        <li><a href="#plans">Contact</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
-              
-          
-               <div>
-              <textarea id="subject" name="subject" placeholder="Leave me a short massage.." style="height:100px"></textarea>
-               </div>
-              
-               <div>
-                 <input type="submit" value="Submit">
+            </nav>
+            <div class="hero-text-box">
+                <h1>Hello I'm,<br>Nothile Ngcobo</h1>
+                <h3 style="color: whitesmoke;">web Developer</h3> <br>
+                <a class="btn btn-full js--section-features"  href="#features">About Me</a>
+            
+            </div>
+            
+        </header>
+        
+        <section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>About Me</h2>
+                <p class="long-copy">
+                    Welcome  to my portfolio  i'm  a Full-Stack web developer, very passionate about building and exploring new  technology ideas!
+                </p>
+            </div>
+            
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-person-outline icon-big"></i>
+                    <h3>First Experience</h3>
+                    <p>
+                       This was one of the breakpoint in my life. I decided to change my carrier path and moved to web development from health sciences, That is where i started to explore different kinds of courses online.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-briefcase-outline icon-big"></i>
+                    <h3>Learneship</h3>
+                    <p>
+                        I'm currently working @Umuzi Academy doing a Learneship in information Technology.  since i have joined umuzi i have been  experiementing and learning quite a number of technologies and also to be part of a greate product team, where i am working as an Angular Front-End developer.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <ion-icon name="code-outline" class="icon-big"></ion-icon>
+                    <h3>Languages</h3>
+                   <p>
+                    JavaScript <br> Html <br> Css
+                   </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <ion-icon name="code-slash-outline" class="icon-big"></ion-icon>
+                    <h3>Skills</h3>
+                    <p>
+                       Angular <br> Bootstrap <br> Jquery <br> Express and Node.js <br> Postgres <br> MySql <br> Docker <br> GitHub <br> Rest Apis
+                    </p>
+                </div>
+            </div>   
+        </section>
+        
+        
+        <section class="section-cities" id="cities">
+            <div class="row">
+                <h2>Projects i have worked on </h2>
+            </div>
+            <div class="row js--wp-3">
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/ptoject-calculator.png">
+                    <h3>JS calculator</h3>
+                    <div class="city-feature">
+                        
+                    </div>
+                    <div class="city-feature">
+                        
+                        This is a basic JS calculator, you can check the finish product on github
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <a href=" https://nothil.github.io/calculator/">Calculator</a>
+                    </div>
+                </div>
 
-               </div>
-          
-              
-    </div>
-              <a class="btn" href="https://github.com/nothil?tab=repositories">
-                  <i class="fab fa-github-square" ></i></a>
-                     </a>
-            
-                  <a  class="btn" href="#">
-                  <i class="fas fa-envelope-open-text" ></i> </a>
-                  </a>
-            
-                <a  class="btn" href="https://www.linkedin.com/in/nothile-ngcobo-291243199/">
-                    <i class="fab fa-linkedin-in"></i> </a>
-                </a>
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/check-it.png">
+                    <h3>JavaScript ToDoLIst</h3>
+                    <div class="city-feature">
+                        
+                    </div>
+                    <div class="city-feature">
+                        
+                        This is a basic JS todo, you can check the finish product on github
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <a href="https://nothil.github.io/Check-itBru/">Check-it</a>
+                    </div>
+                </div>
+
+
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/form.png">
+                    <h3>NodeJs & Express </h3>
+                    <div class="city-feature">
+                        
+                    </div>
+                    <div class="city-feature">
+                        
+                        This is Front-End to back-end, project.
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <a href="https://nothil.github.io/express-Ajax/">Form</a>
+                    </div>
+                </div>
                 
-          </footer>
+                
+
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/ToDoLIst.png">
+                    <h3>Jquery To-DoList</h3>
+                    <div class="city-feature">
+                        This project i have used Jquery, Bootstrap and Html.
+                        check the link below for a finished product.
+                    </div>
+                    
+                    <div class="city-feature">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <a href=>Check-it</a>
+                    </div>
+                </div>
+                
+            </div>
             
-          </div>
-    </div>
+        </section>
 
-</body>
+        
+         
+        <section class="section-form" id="plans">
+            <div class="row">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name"  required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email"  required>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop me a massage</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" ></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="send!">
+                        </div>
+                    </div>
+                    
+                </form>
+                
+            </div>
+        </section>
+        
+        <footer>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                       
+                        <div class="city-feature">
+                            <a href="https://www.linkedin.com/in/nothile-ngcobo-291243199/" class="fa fa-linkedin"></a>
+                            
+            
+                        </div>
+                    
+            
+                        <div class="city-feature">
+                            
+                            <a href="https://github.com/nothil?tab=repositories" class="fa fa-github"></a>
+                            
+                        </div>
+            
+
+                    
+
+                        <div class="row">
+                            <p>
+                                Copyright &copy; 2020 by Nothile Ngcobo. All rights reserved.
+                            </p>
+                        </div>
+                
+                        
+                    </ul>
+                </div>
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                
+            </div>
+        </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="resources/js/script.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61026110-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+    </body>  
+    
 </html>
-
-
-
